@@ -23,7 +23,6 @@ data.locations.forEach(element => {
   index++;
 });
 
-console.log(cityCases);
 const cityStats = React.createElement(
   "div",
   { id: "cities" },
@@ -42,7 +41,16 @@ const statistics = React.createElement("div", { id: "statistics" }, [
       { style: { "text-align": "center" } },
       "Les cas total confirmé au Maroc"
     ),
-    React.createElement("h2", { style: { "text-align": "center" } }, totalCases)
+    React.createElement(
+      "h2",
+      { style: { "text-align": "center" } },
+      totalCases
+    ),
+    React.createElement(
+      "small",
+      { style: { "text-align": "center" } },
+      "Dernière mise à jour:\n" + data.lastUpdate
+    )
   ]),
   React.createElement("br", {}, undefined),
   cityStats
