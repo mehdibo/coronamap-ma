@@ -1,6 +1,50 @@
-[
-  {
-    "position": [32.898, -6.894],
-    "count": 100
-  }
-]
+{
+  "lastUpdate": "2020-03-15 00:00",
+  "locations": [
+    {
+      "name": "Rabat/Sale",
+      "position": [34.0231, -6.8349],
+      "count": 9
+    },
+    {
+      "name": "Casablanca",
+      "position": [33.595, -7.6186],
+      "count": 7
+    },
+    {
+      "name": "Marrakech",
+      "position": [31.6258257, -7.9891608],
+      "count": 3
+    },
+    {
+      "name": "Fes",
+      "position": [34.0345, -5.0096],
+      "count": 3
+    },
+    {
+      "name": "Temara",
+      "position": [33.917166, -6.923804],
+      "count": 2
+    },
+    {
+      "name": "Taroudant",
+      "position": [30.4707, -8.8782],
+      "count": 1
+    },
+    {
+      "name": "Tetouan",
+      "position": [35.5697, -5.3738],
+      "count": 1
+    },
+    {
+      "name": "Khouribga",
+      "position": [32.8851, -6.909],
+      "count": 1
+    },
+    {
+      "name": "Fqih Ben Salah",
+      "position": [32.5027, -6.6867],
+      "count": 1
+    }
+  ]
+}
