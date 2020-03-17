@@ -4,7 +4,9 @@ import { Map, TileLayer } from "react-leaflet";
 class App extends React.Component {
   render() {
     return (
-      <Map
+      <div>
+        {this.props.statistics}
+        <Map
         center={[29, -6]}
         zoom={6}
         maxZoom={10}
@@ -15,10 +17,11 @@ class App extends React.Component {
         dragging={true}
         animate={true}
         easeLinearity={0.35}
-      >
-        <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
-        {this.props.markers}
-      </Map>
+        >
+          <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
+          {this.props.markers}
+        </Map>
+      </div>
     );
   }
 }

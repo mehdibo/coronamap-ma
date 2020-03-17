@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactLists from "react-scrollable-list";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -12,7 +13,35 @@ const markers = data.locations.map(location => (
   </CircleMarker>
 ));
 
-ReactDOM.render(<App markers={markers} />, document.getElementById("root"));
+let totalCases = 0;
+let cityCases = [];
+let index = 0;
+
+data.locations.forEach(element => {
+  totalCases += element.count;
+  cityCases.push({ id:index, content: element.name + ': ' + element.count});
+  index++;
+});
+
+const cityStats = React.createElement('div', {id: 'cities'},
+  <ReactLists
+    listItems={cityCases}
+    heightOfItems={10}
+    maxItemsToRender={10}
+    style={{ }}
+  />
+);
+
+const statistics = React.createElement('div', {id: 'statistics'}, [
+  React.createElement('div', {id: 'totalcases'}, [
+    React.createElement('h4', {style: {'text-align': 'center'}}, 'Les cas total confirmé au Maroc'),
+    React.createElement('h2', {style: {'text-align': 'center'}}, totalCases)
+  ]),
+  React.createElement('br', {}, undefined),
+  cityStats
+]);
+
+ReactDOM.render(<App markers={markers} statistics={statistics} />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,6 +1,76 @@
 #root {
   height: 100%;
 }
+
+@media (min-width: 600px) {
+
+  #statistics {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  #totalcases {
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
+  }
+
+  #cities {
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
+  }
+}
+
+.react-scrollable-list {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 300px;
+  width: 250px;
+  overflow-y: scroll;
+}
+
+.react-scrollable-list-item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 5px;
+  background-color: #ffffff;
+  border-bottom: #ddd solid 1px;
+  pointer-events: none;
+}
+
+@media (max-width: 599px) {
+
+  #statistics {
+    position: fixed;
+    width: 100% !important;
+    bottom: 5px;
+    z-index: 1000;
+  }
+
+  #totalcases {
+    background-color: #ffffff;
+    border-radius: 7px;
+    bottom: 5px;
+    padding: 20px 20px 20px 20px;
+    position: fixed;
+    width: 100% !important;
+    bottom: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
+  }
+
+  #cities {
+    visibility: hidden;
+  }
+}
+
 .leaflet-container {
   height: 1000px;
   width: 100%;
