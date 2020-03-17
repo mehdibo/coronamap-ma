@@ -14,6 +14,7 @@ const markers = data.locations.map(location => (
 ));
 
 let totalCases = 0;
+let deaths = data.Deaths;
 let cityCases = [];
 let index = 0;
 
@@ -35,7 +36,9 @@ const cityStats = React.createElement('div', {id: 'cities'},
 const statistics = React.createElement('div', {id: 'statistics'}, [
   React.createElement('div', {id: 'totalcases'}, [
     React.createElement('h4', {style: {'text-align': 'center'}}, 'Les cas total confirmé au Maroc'),
-    React.createElement('h2', {style: {'text-align': 'center'}}, totalCases)
+    React.createElement('h2', {style: {'text-align': 'center'}}, totalCases),
+    React.createElement('h4', {style: {'text-align': 'center'}}, 'Total Deaths'),
+    React.createElement('h2', {style: {'text-align': 'center'}}, deaths)
   ]),
   React.createElement('br', {}, undefined),
   cityStats
