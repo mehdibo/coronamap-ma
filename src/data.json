@@ -1,10 +1,10 @@
 {
-  "lastUpdate": "2020-03-15 00:00",
+  "lastUpdate": "2020-03-17 00:00",
   "locations": [
     {
       "name": "Rabat/Sale",
       "position": [34.0231, -6.8349],
-      "count": 11
+      "count": 12
     },
     {
       "name": "Casablanca",
@@ -54,6 +54,26 @@
     {
       "name": "Agadir",
       "position": [30.4208, -9.583],
+      "count": 1
+    },
+    {
+      "name": "Tangier",
+      "position": [35.777103, -5.803792],
+      "count": 2
+    },
+    {
+      "name": "Oujda",
+      "position": [34.677874, -1.929306],
+      "count": 1
+    },
+    {
+      "name": "Settat",
+      "position": [33.0024, -7.6199],
+      "count": 1
+    },
+    {
+      "name": "Guelmim",
+      "position": [28.9863852, -10.0574351],
       "count": 1
     }
   ]
