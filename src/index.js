@@ -34,7 +34,7 @@ const cityStats = React.createElement('div', {id: 'cities'},
 
 const statistics = React.createElement('div', {id: 'statistics'}, [
   React.createElement('div', {id: 'totalcases'}, [
-    React.createElement('h4', {style: {'text-align': 'center'}}, 'Total Confirmed'),
+    React.createElement('h4', {style: {'text-align': 'center'}}, 'Les cas total confirmé au Maroc'),
     React.createElement('h2', {style: {'text-align': 'center'}}, totalCases)
   ]),
   React.createElement('br', {}, undefined),
