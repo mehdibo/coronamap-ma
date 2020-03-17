@@ -41,7 +41,7 @@ const statistics = React.createElement("div", { id: "statistics" }, [
     React.createElement(
       "h4",
       { style: { "text-align": "center" } },
-      "Les cas total confirmé au Maroc"
+      "Totalité des cas confirmés au Maroc"
     ),
     React.createElement(
       "h2",
