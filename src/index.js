@@ -9,7 +9,9 @@ import data from "./data.json";
 
 const markers = data.locations.map(location => (
   <CircleMarker center={location.position} color="red" radius={location.count}>
-    <Popup>Number of Corona cases: {location.count}</Popup>
+    <Popup>
+      {location.name}: {location.count}
+    </Popup>
   </CircleMarker>
 ));
 
