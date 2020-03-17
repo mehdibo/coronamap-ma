@@ -18,7 +18,7 @@ class App extends React.Component {
         animate={true}
         easeLinearity={0.35}
         >
-          <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
+          <TileLayer url="http://tile-b.openstreetmap.fr/hot/{z}/{x}/{y}.png" />
           {this.props.markers}
         </Map>
       </div>
