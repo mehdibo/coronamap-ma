@@ -1,10 +1,12 @@
 import React from "react";
 import { Map, TileLayer } from "react-leaflet";
+import Alert from '@material-ui/lab/Alert';
 
 class App extends React.Component {
   render() {
     return (
       <div>
+        <Alert style={{zIndex:99999,position:'absolute',bottom:0,margin:10, fontSize:20,fontWeight: 'bold',color:'#ecf0f1',backgroundColor:'#e74c3c'}} severity="">Numero d'urgence — 0801004747</Alert>
         {this.props.statistics}
         <Map
           center={[29, -6]}
