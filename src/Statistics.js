@@ -83,6 +83,15 @@ class Statistics extends React.Component {
           </span>
         </div>
         {cityStats}
+        <div class="gradient-ibiza-sunset card">
+          <div class="px-3 py-3 card-body">
+            <div class="media">
+              <div class="white media-body">
+                <span>Numero d'urgence — 0801004747</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

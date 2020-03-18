@@ -1,7 +1,6 @@
 import React from "react";
 import { Map, ImageOverlay } from "react-leaflet";
 import Statistics from "./Statistics";
-import Alert from "@material-ui/lab/Alert";
 
 class App extends React.Component {
   state = { drawerOpen: false }
@@ -64,21 +63,6 @@ class App extends React.Component {
           caseconfirmed={this.props.caseconfirmed}
           cities={this.props.cities}
         />
-        <Alert
-          style={{
-            zIndex: 99999,
-            position: "absolute",
-            bottom: 0,
-            margin: 10,
-            fontSize: 20,
-            fontWeight: "bold",
-            color: "#ecf0f1",
-            backgroundColor: "#e74c3c"
-          }}
-          severity=""
-        >
-          Numero d'urgence — 0801004747
-        </Alert>
         <Map
           center={[29, -6]}
           zoom={6}
