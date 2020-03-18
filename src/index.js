@@ -16,7 +16,6 @@ const markers = data.locations.map(location => (
 ));
 
 let totalCases = 0;
-let deaths = data.deaths;
 let cityCases = [];
 let index = 0;
 
