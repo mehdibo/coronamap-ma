@@ -1,5 +1,5 @@
 import React from "react";
-import { Map, TileLayer, ImageOverlay } from "react-leaflet";
+import { Map, ImageOverlay } from "react-leaflet";
 import Alert from "@material-ui/lab/Alert";
 
 class App extends React.Component {
