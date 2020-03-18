@@ -111,7 +111,7 @@ class Statistics extends React.Component {
                 <span>
                   Numero d'urgence —{" "}
                   <a style={{ color: "#fff" }} href="tel://0801004747">
-                    0801004747
+                    080 100 4747
                   </a>
                 </span>
               </div>
