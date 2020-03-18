@@ -50,34 +50,19 @@ const statistics = React.createElement("div", { id: "statistics" }, [
     ),
     React.createElement(
         "h4", {
-          style: {
-            "text-align": "center"
-          }
-        },
+          style: { "text-align": "center" } },
         "Total décès"
       ),
       React.createElement(
-        "h2", {
-          style: {
-            "text-align": "center"
-          }
-        },
+        "h2", {style: { "text-align": "center" } },
         data.deaths
       ),
       React.createElement(
-          "h4", {
-            style: {
-              "text-align": "center"
-            }
-          },
+          "h4", {style: { "text-align": "center" } },
           "Total guéri"
         ),
         React.createElement(
-          "h2", {
-            style: {
-              "text-align": "center"
-            }
-          },
+          "h2", {style: { "text-align": "center" } },
           data.recovered
         ),
     React.createElement(
