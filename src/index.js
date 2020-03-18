@@ -33,7 +33,7 @@ const cityStats = React.createElement(
     heightOfItems={10}
     // maxItemsToRender={11}
     style={{}}
-  />, 
+  />
 );
 
 const statistics = React.createElement("div", { id: "statistics" }, [
