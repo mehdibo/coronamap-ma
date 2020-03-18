@@ -18,6 +18,22 @@
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
   }
 
+  #counter {
+    display: block;
+    height: 100px;
+  }
+
+  #counter #recovered
+  {
+    width: auto;
+    float: left;
+  }
+
+  #counter #deathcount {
+    width: auto;
+    float: right;
+  }
+
   #cities {
     background-color: #ffffff;
     border-radius: 7px;

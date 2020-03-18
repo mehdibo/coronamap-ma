@@ -10,7 +10,7 @@ class App extends React.Component {
           style={{
             zIndex: 99999,
             position: "absolute",
-            bottom: 0,
+            bottom: 20,
             margin: 10,
             fontSize: 20,
             fontWeight: "bold",
@@ -44,13 +44,20 @@ class App extends React.Component {
           ></ImageOverlay>
           {this.props.markers}
         </Map>
-        <a
-          href="https://github.com/mehdibo/coronamap-ma"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View source on GitHub
-        </a>
+        < a
+        href = "https://github.com/mehdibo/coronamap-ma"
+        target = "_blank"
+        rel = "noopener noreferrer"
+        style = {
+          {
+            zIndex: 99999,
+            position: "absolute",
+            bottom: 0,
+            textDecoration: "none",
+            color: "#000"
+          }
+        } >
+          View source on GitHub </a>
       </div>
     );
   }

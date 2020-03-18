@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ReactLists from "react-scrollable-list";
 import "./index.css";
+import "./App.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Popup, CircleMarker } from "react-leaflet";
@@ -37,51 +38,61 @@ const cityStats = React.createElement(
 );
 
 const statistics = React.createElement("div", { id: "statistics" }, [
+	
   React.createElement("div", { id: "totalcases" }, [
-    React.createElement(
-      "h4",
-      { style: { "text-align": "center" } },
-      "Total confirmé"
-    ),
-    React.createElement(
-      "h2",
-      { style: { "text-align": "center" } },
-      totalCases
-    ),
-    React.createElement(
-      "h4",
-      {
-        style: { "text-align": "center" }
-      },
-      "Total décès"
-    ),
-    React.createElement(
-      "h2",
-      { style: { "text-align": "center" } },
-      data.deaths
-    ),
-    React.createElement(
-      "h4",
-      { style: { "text-align": "center" } },
-      "Total guéri"
-    ),
-    React.createElement(
-      "h2",
-      { style: { "text-align": "center" } },
-      data.recovered
-    ),
-    React.createElement(
-      "small",
-      { style: { "text-align": "center" } },
-      "Dernière mise à jour:\n" + data.lastUpdate
-    )
-  ]),
-  React.createElement("br", {}, undefined),
-  cityStats
+		React.createElement("div",  
+			{ style: { "text-align": "center" } },
+	  		"Dernière mise à jour:\n" + data.lastUpdate
+		),
+		React.createElement(
+			"h4",
+			{ style: { "text-align": "center" } },
+			"Total confirmé"
+		),
+		React.createElement(
+			"h2",
+			{ style: { "text-align": "center" } },
+			totalCases
+		),
+		React.createElement("div", {id: "counter"}, [
+			React.createElement("div", {id: "deathcount"}, [
+				React.createElement(
+				"h4",
+				{ style: { "text-align": "center" } },
+				"Total décès"
+				),
+				React.createElement(
+				"h2",
+				{ style: { "text-align": "center", "color": "#f00" } },
+				data.deaths
+				)
+			]),
+			React.createElement("div", {id: "recovered"}, [
+				React.createElement(
+				"h4",
+				{ style: { "text-align": "center" } },
+				"Total guéri"
+				),
+				React.createElement(
+				"h2",
+				{ style: { "text-align": "center", "color": "#0f0" } },
+				data.recovered
+				)
+			])
+		]),
+	]),
+    React.createElement("br", {}, undefined),
+    cityStats
 ]);
 
 ReactDOM.render(
-  <App markers={markers} statistics={statistics} />,
+  < App markers = {
+    markers
+  }
+  statistics = {
+    statistics
+  }
+  />,
   document.getElementById("root")
 );
 
