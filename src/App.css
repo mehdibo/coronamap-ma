@@ -2,47 +2,7 @@
   height: 100%;
 }
 
-@media (min-width: 600px) {
-
-  #statistics {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-  }
-
-  #totalcases {
-    background-color: #ffffff;
-    border-radius: 7px;
-    padding: 20px 20px 20px 20px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
-  }
-
-  #counter {
-    display: block;
-    height: 100px;
-  }
-
-  #counter #recovered
-  {
-    width: auto;
-    float: left;
-  }
-
-  #counter #deathcount {
-    width: auto;
-    float: right;
-  }
-
-  #cities {
-    background-color: #ffffff;
-    border-radius: 7px;
-    padding: 20px 20px 20px 20px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
-  }
-}
-
-.react-scrollable-list {
+#cities .react-scrollable-list {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -51,7 +11,7 @@
   overflow-y: scroll;
 }
 
-.react-scrollable-list-item {
+#cities .react-scrollable-list-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -62,32 +22,91 @@
   pointer-events: none;
 }
 
-@media (max-width: 599px) {
+#cities-drawer .react-scrollable-list {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 300px;
+  width: 100%;
+  overflow-y: scroll;
+}
 
-  #statistics {
-    position: fixed;
-    width: 100% !important;
-    bottom: 5px;
-    z-index: 1000;
-  }
+#cities-drawer .react-scrollable-list-item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  margin: 20px 0 20px 0;
+  background-color: #ffffff;
+  border-bottom: #ddd solid 1px;
+  pointer-events: none;
+}
 
-  #totalcases {
-    background-color: #ffffff;
-    border-radius: 7px;
-    bottom: 5px;
-    padding: 20px 20px 20px 20px;
-    position: fixed;
-    width: 100% !important;
-    bottom: 5px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
-  }
+#statistics {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
 
-  #cities {
-    visibility: hidden;
-  }
+#totalcases {
+  background-color: #ffffff;
+  border-radius: 7px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#cities {
+  background-color: #ffffff;
+  border-radius: 7px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .leaflet-container {
   height: 1000px;
   width: 100%;
+}
+
+.side-drawer { 
+  height: 1000px;
+  background: #eff0f2;
+  position: absolute;
+  padding: 3% 10% 3% 10%;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 4000;
+  box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+
+@media only screen and (min-width: 1210px) {
+  .side-drawer { 
+    height: 1000px;
+    background: #eff0f2;
+    position: absolute;
+    padding: 10px 20px 10px 20px;
+    top: 0;
+    right: 0;
+    width: 40%;
+    z-index: 4000;
+    box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+  }
+
+  .close-button {
+    visibility: hidden;
+  }
+
+  .activated {
+    transform: translateX(200%);
+    transition: transform 0.3s ease-out;
+  }
+}
+
+.side-drawer.open {
+  transform: translateX(0);
 }
