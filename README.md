@@ -3,7 +3,7 @@ Moroccan map for Corona cases
 
 # Submit a new case
 
-If there is a new case in a city just go [here](https://github.com/mehdibo/coronamap-ma/issues/new?assignees=&labels=new-case&template=new-corona-case-report.md&title=New+case+in+CITY_NAME+on+FULL_DATE)
+If there is a new case in a city just go [here](https://github.com/mehdibo/coronamap-ma/issues/new?assignees=&labels=new-case&template=new-corona-case-report.md&title=New+cases+on+FULL_DATE)
 
 Title must be like this:
 
