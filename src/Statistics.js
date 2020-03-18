@@ -5,10 +5,11 @@ import data from "./data.json";
 
 class Statistics extends React.Component {
   render() {
+    const sortedCities = this.props.cities.sort((a, b)=> parseInt(b.content.split(":")[1]) - parseInt(a.content.split(":")[1]));
     const cityStats = React.createElement(
       "div",
       { id: "cities-drawer", className: "card" },
-      <ReactLists listItems={this.props.cities} heightOfItems={10} />
+      <ReactLists listItems={sortedCities} heightOfItems={10} />
     );
 
     let drawerClasses = "side-drawer";
