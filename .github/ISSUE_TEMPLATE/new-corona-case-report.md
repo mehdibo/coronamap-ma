@@ -1,7 +1,7 @@
 ---
 name: New corona case report
 about: Report a new corona case in Morocco
-title: New case in CITY_NAME on FULL_DATE
+title: New cases on FULL_DATE
 labels: new-case
 assignees: ''
 
