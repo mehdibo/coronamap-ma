@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ReactLists from "react-scrollable-list";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -25,63 +24,8 @@ data.locations.forEach(element => {
   index++;
 });
 
-const cityStats = React.createElement(
-  "div",
-  { id: "cities" },
-  <ReactLists
-    listItems={cityCases}
-    heightOfItems={10}
-    // maxItemsToRender={11}
-    style={{}}
-  />
-);
-
-const statistics = React.createElement("div", { id: "statistics" }, [
-  React.createElement("div", { id: "totalcases" }, [
-    React.createElement(
-      "h4",
-      { style: { "text-align": "center" } },
-      "Total confirmé"
-    ),
-    React.createElement(
-      "h2",
-      { style: { "text-align": "center" } },
-      totalCases
-    ),
-    React.createElement(
-      "h4",
-      {
-        style: { "text-align": "center" }
-      },
-      "Total décès"
-    ),
-    React.createElement(
-      "h2",
-      { style: { "text-align": "center" } },
-      data.deaths
-    ),
-    React.createElement(
-      "h4",
-      { style: { "text-align": "center" } },
-      "Total guéri"
-    ),
-    React.createElement(
-      "h2",
-      { style: { "text-align": "center" } },
-      data.recovered
-    ),
-    React.createElement(
-      "small",
-      { style: { "text-align": "center" } },
-      "Dernière mise à jour:\n" + data.lastUpdate
-    )
-  ]),
-  React.createElement("br", {}, undefined),
-  cityStats
-]);
-
 ReactDOM.render(
-  <App markers={markers} statistics={statistics} />,
+  <App markers={markers} caseconfirmed={totalCases} cities={cityCases} />,
   document.getElementById("root")
 );
 
