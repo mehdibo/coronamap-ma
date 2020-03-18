@@ -16,7 +16,6 @@ const markers = data.locations.map(location => (
 ));
 
 let totalCases = 0;
-let deaths = data.deaths;
 let cityCases = [];
 let index = 0;
 
@@ -42,14 +41,35 @@ const statistics = React.createElement("div", { id: "statistics" }, [
     React.createElement(
       "h4",
       { style: { "text-align": "center" } },
-      "Totalité des cas confirmés au Maroc"
+      "Total confirmé"
     ),
     React.createElement(
       "h2",
       { style: { "text-align": "center" } },
       totalCases
     ),
-    React.createElement('h4', {style: {'text-align': 'center'}}, 'Total de '+deaths+' décès'),
+    React.createElement(
+      "h4",
+      {
+        style: { "text-align": "center" }
+      },
+      "Total décès"
+    ),
+    React.createElement(
+      "h2",
+      { style: { "text-align": "center" } },
+      data.deaths
+    ),
+    React.createElement(
+      "h4",
+      { style: { "text-align": "center" } },
+      "Total guéri"
+    ),
+    React.createElement(
+      "h2",
+      { style: { "text-align": "center" } },
+      data.recovered
+    ),
     React.createElement(
       "small",
       { style: { "text-align": "center" } },

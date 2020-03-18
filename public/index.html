@@ -21,13 +21,28 @@
       integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
       crossorigin=""
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-118359086-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-118359086-2");
+    </script>
+
     <style>
       #root {
         height: 100%;
       }
 
       @media (min-width: 600px) {
-
         #statistics {
           position: absolute;
           top: 10px;
@@ -39,14 +54,14 @@
           background-color: #ffffff;
           border-radius: 7px;
           padding: 20px 20px 20px 20px;
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
         }
 
         #cities {
           background-color: #ffffff;
           border-radius: 7px;
           padding: 20px 20px 20px 20px;
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
         }
       }
 
@@ -71,7 +86,6 @@
       }
 
       @media (max-width: 599px) {
-
         #statistics {
           position: fixed;
           width: 100% !important;
@@ -87,7 +101,7 @@
           position: fixed;
           width: 100% !important;
           bottom: 5px;
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
         }
 
         #cities {
