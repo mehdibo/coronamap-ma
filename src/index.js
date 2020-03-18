@@ -9,41 +9,61 @@ import data from "./data.json";
 
 const markers = data.locations.map(location => (
   <CircleMarker center={location.position} color="red" radius={location.count}>
-    <Popup>Number of Corona cases: {location.count}</Popup>
+    <Popup>
+      {location.name}: {location.count}
+    </Popup>
   </CircleMarker>
 ));
 
 let totalCases = 0;
-let deaths = data.Deaths;
+let deaths = data.deaths;
 let cityCases = [];
 let index = 0;
 
 data.locations.forEach(element => {
   totalCases += element.count;
-  cityCases.push({ id:index, content: element.name + ': ' + element.count});
+  cityCases.push({ id: index, content: element.name + ": " + element.count });
   index++;
 });
 
-const cityStats = React.createElement('div', {id: 'cities'},
+const cityStats = React.createElement(
+  "div",
+  { id: "cities" },
   <ReactLists
     listItems={cityCases}
     heightOfItems={10}
-    maxItemsToRender={10}
-    style={{ }}
+    // maxItemsToRender={11}
+    style={{}}
   />
 );
 
-const statistics = React.createElement('div', {id: 'statistics'}, [
-  React.createElement('div', {id: 'totalcases'}, [
-    React.createElement('h4', {style: {'text-align': 'center'}}, 'Les cas total confirmé au Maroc'),
-    React.createElement('h2', {style: {'text-align': 'center'}}, totalCases),
-    React.createElement('h4', {style: {'text-align': 'center'}}, 'total de '+deaths+' décès'),
+const statistics = React.createElement("div", { id: "statistics" }, [
+  React.createElement("div", { id: "totalcases" }, [
+    React.createElement(
+      "h4",
+      { style: { "text-align": "center" } },
+      "Totalité des cas confirmés au Maroc"
+    ),
+    React.createElement(
+      "h2",
+      { style: { "text-align": "center" } },
+      totalCases
+    ),
+    React.createElement('h4', {style: {'text-align': 'center'}}, 'Total de '+deaths+' décès'),
+    React.createElement(
+      "small",
+      { style: { "text-align": "center" } },
+      "Dernière mise à jour:\n" + data.lastUpdate
+    )
   ]),
-  React.createElement('br', {}, undefined),
+  React.createElement("br", {}, undefined),
   cityStats
 ]);
 
-ReactDOM.render(<App markers={markers} statistics={statistics} />, document.getElementById("root"));
+ReactDOM.render(
+  <App markers={markers} statistics={statistics} />,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
