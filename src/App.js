@@ -88,8 +88,18 @@ class App extends React.Component {
           href="https://github.com/mehdibo/coronamap-ma"
           target="_blank"
           rel="noopener noreferrer"
+          className="mr-1"
         >
           View source on GitHub
+        </a>
+        -
+        <a
+          href="http://covidmaroc.ma/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-1"
+        >
+          Information source
         </a>
       </div>
     );
