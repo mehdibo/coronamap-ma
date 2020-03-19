@@ -1,87 +1,52 @@
 {
-  "lastUpdate": "2020-03-19 14:28",
+  "lastUpdate": "2020-03-19 15:37",
   "deaths": 2,
   "recovered": 1,
   "locations": [
     {
-      "name": "Rabat/Sale",
-      "position": [34.0231, -6.8349],
+      "name": "Beni Mellal-Khénifra​",
+      "position": [32.4843, -6.3199],
+      "count": 2
+    },
+    {
+      "name": "Casa Settat",
+      "position": [33.101, -7.806],
+      "count": 14
+    },
+    {
+      "name": "Fès meknes",
+      "position": [33.756, -4.845],
       "count": 12
     },
     {
-      "name": "Casablanca",
-      "position": [33.595, -7.6186],
-      "count": 11
-    },
-    {
-      "name": "Marrakech",
-      "position": [31.6258257, -7.9891608],
-      "count": 5
-    },
-    {
-      "name": "Fes",
-      "position": [34.0345, -5.0096],
-      "count": 5
-    },
-    {
-      "name": "Temara",
-      "position": [33.917166, -6.923804],
-      "count": 2
-    },
-    {
-      "name": "Taroudant",
-      "position": [30.4707, -8.8782],
+      "name": "Guelmim Oued Noun",
+      "position": [28.387, -10.091],
       "count": 1
     },
     {
-      "name": "Tetouan",
-      "position": [35.5697, -5.3738],
+      "name": "Marrakech Safi",
+      "position": [31.831, -8.317],
+      "count": 6
+    },
+    {
+      "name": "Oriental",
+      "position": [33.326, -2.422],
       "count": 1
     },
     {
-      "name": "Khouribga",
-      "position": [32.8851, -6.909],
-      "count": 1
+      "name": "Rabat Salé Kenitra",
+      "position": [34.098, -6.328],
+      "count": 15
     },
     {
-      "name": "Fqih Ben Salah",
-      "position": [32.5027, -6.6867],
-      "count": 1
+      "name": "Souss-Massa",
+      "position": [29.7453, -8.1436],
+      "count": 6
     },
     {
-      "name": "Meknes",
-      "position": [33.8968225, -5.531844],
-      "count": 2
-    },
-    {
-      "name": "Agadir",
-      "position": [30.4208, -9.583],
-      "count": 3
-    },
-    {
-      "name": "Tangier",
-      "position": [35.777103, -5.803792],
-      "count": 2
-    },
-    {
-      "name": "Oujda",
-      "position": [34.677874, -1.929306],
-      "count": 1
-    },
-    {
-      "name": "Settat",
-      "position": [33.0024, -7.6199],
-      "count": 1
-    },
-    {
-      "name": "Guelmim",
-      "position": [28.9863852, -10.0574351],
-      "count": 1
-    },
-    {
-      "name": "Unknown",
-      "position": null,
-      "count": 12
+      "name": "Tanger Tetouan Al Hoceima",
+      "position": [35.3174, -5.4657],
+      "count": 4
     }
   ]
 }
