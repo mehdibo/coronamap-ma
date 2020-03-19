@@ -16,15 +16,19 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [13.x]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run deploy
-      env:
-        CI: true
+    - name: Install Packages
+      run: npm install
+    - name: Deploy to GH Pages
+      run: |
+        git config --global user.email "mehdi.bounya@gmail.com"
+        git config --global user.name "mehdibo"
+        git remote set-url origin https://${{ secrets.githubToken }}@github.com/mehdibo/coronamap-ma.git
+        npm run deploy
