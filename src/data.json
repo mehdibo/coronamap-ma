@@ -1,10 +1,10 @@
 {
-  "lastUpdate": "2020-03-19 15:45",
+  "lastUpdate": "2020-03-19 21:31",
   "deaths": 2,
   "recovered": 2,
   "locations": [
     {
-      "name": "Beni Mellal-Khénifra​",
+      "name": "Beni Mellal-Khenifra",
       "position": [32.4843, -6.3199],
       "count": 2
     },
@@ -47,6 +47,11 @@
       "name": "Tanger Tetouan Al Hoceima",
       "position": [35.3174, -5.4657],
       "count": 4
+    },
+    {
+      "name": "Inconnu",
+      "position": null,
+      "count": 2
     }
   ]
 }
