@@ -1,0 +1,9 @@
+name: "Deploy to GitHub pages"
+author: "Mehdi Bounya <mehdi.bounya@gmail.com>"
+description: "Deploys to Github pages whenever there is a Pull Request or a new Push"
+runs: 
+  using: 'node13'
+  main: 'src/index.js'
+branding:
+  icon: 'server'  
+  color: 'blue'
