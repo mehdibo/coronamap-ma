@@ -6,13 +6,20 @@ import * as serviceWorker from "./serviceWorker";
 import { Popup, CircleMarker } from "react-leaflet";
 import data from "./data.json";
 
-const markers = data.locations.map(location => (
-  <CircleMarker center={location.position} color="red" radius={location.count}>
-    <Popup>
-      {location.name}: {location.count}
-    </Popup>
-  </CircleMarker>
-));
+const markers = data.locations.map(
+  location =>
+    location.position && (
+      <CircleMarker
+        center={location.position}
+        color="red"
+        radius={location.count}
+      >
+        <Popup>
+          {location.name}: {location.count}
+        </Popup>
+      </CircleMarker>
+    )
+);
 
 let totalCases = 0;
 let cityCases = [];

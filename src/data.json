@@ -77,6 +77,11 @@
       "name": "Guelmim",
       "position": [28.9863852, -10.0574351],
       "count": 1
+    },
+    {
+      "name": "Unknown",
+      "position": null,
+      "count": 9
     }
   ]
 }
