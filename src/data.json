@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2020-03-20 14:33",
+  "lastUpdate": "2020-03-20 16:35",
   "deaths": 3,
   "recovered": 2,
   "locations": [
@@ -16,7 +16,7 @@
     {
       "name": "Fès meknes",
       "position": [33.756, -4.845],
-      "count": 13
+      "count": 19
     },
     {
       "name": "Guelmim Oued Noun",
@@ -36,7 +36,7 @@
     {
       "name": "Rabat Salé Kenitra",
       "position": [34.098, -6.328],
-      "count": 16
+      "count": 18
     },
     {
       "name": "Souss-Massa",
