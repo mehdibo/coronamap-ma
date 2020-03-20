@@ -3,19 +3,19 @@ import { Map, ImageOverlay } from "react-leaflet";
 import Statistics from "./Statistics";
 
 class App extends React.Component {
-  state = { drawerOpen: false }
+  state = { drawerOpen: false };
 
   drawerToggleClickHandler = () => {
     this.setState({
       drawerOpen: !this.state.drawerOpen
-    })
-  }
+    });
+  };
 
   backdropClickHandler = () => {
     this.setState({
       drawerOpen: false
-    })
-  }
+    });
+  };
 
   render() {
     let drawerClassName = "customizer-toggle bg-danger";
@@ -30,15 +30,15 @@ class App extends React.Component {
           onClick={this.drawerToggleClickHandler}
           style={{
             zIndex: "3000",
-            width: '54px',
-            height: '74px',
-            position: 'absolute',
-            top: '35%',
-            right: '0%',
-            backgroundColor: 'transparent',
-            border: 'none',
-            cursor: 'pointer',
-            outline: 'none'
+            width: "54px",
+            height: "74px",
+            position: "absolute",
+            top: "35%",
+            right: "0%",
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer",
+            outline: "none"
           }}
         >
           <svg
@@ -64,7 +64,7 @@ class App extends React.Component {
           cities={this.props.cities}
         />
         <Map
-          center={[29, -6]}
+          center={[29, -5]}
           zoom={6}
           maxZoom={10}
           attributionControl={true}
@@ -88,8 +88,18 @@ class App extends React.Component {
           href="https://github.com/mehdibo/coronamap-ma"
           target="_blank"
           rel="noopener noreferrer"
+          className="mr-1"
         >
           View source on GitHub
+        </a>
+        -
+        <a
+          href="http://covidmaroc.ma/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-1"
+        >
+          Information source
         </a>
       </div>
     );
