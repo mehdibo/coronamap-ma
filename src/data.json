@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2020-03-20 19:39",
+  "lastUpdate": "2020-03-20 20:57",
   "deaths": 3,
   "recovered": 2,
   "locations": [
@@ -31,7 +31,7 @@
     {
       "name": "Oriental",
       "position": [33.326, -2.422],
-      "count": 1
+      "count": 3
     },
     {
       "name": "Rabat Salé Kenitra",
@@ -46,12 +46,7 @@
     {
       "name": "Tanger Tetouan Al Hoceima",
       "position": [35.3174, -5.4657],
-      "count": 4
-    },
-    {
-      "name": "Inconnu",
-      "position": null,
-      "count": 3
+      "count": 5
     }
   ]
 }
