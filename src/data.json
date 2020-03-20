@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2020-03-20 14:31",
+  "lastUpdate": "2020-03-20 14:33",
   "deaths": 3,
   "recovered": 2,
   "locations": [
@@ -11,12 +11,12 @@
     {
       "name": "Casa Settat",
       "position": [33.101, -7.806],
-      "count": 14
+      "count": 16
     },
     {
       "name": "Fès meknes",
       "position": [33.756, -4.845],
-      "count": 12
+      "count": 13
     },
     {
       "name": "Guelmim Oued Noun",
@@ -26,7 +26,7 @@
     {
       "name": "Marrakech Safi",
       "position": [31.831, -8.317],
-      "count": 6
+      "count": 7
     },
     {
       "name": "Oriental",
@@ -36,7 +36,7 @@
     {
       "name": "Rabat Salé Kenitra",
       "position": [34.098, -6.328],
-      "count": 15
+      "count": 16
     },
     {
       "name": "Souss-Massa",
@@ -47,11 +47,6 @@
       "name": "Tanger Tetouan Al Hoceima",
       "position": [35.3174, -5.4657],
       "count": 4
-    },
-    {
-      "name": "Inconnu",
-      "position": null,
-      "count": 2
     }
   ]
 }
