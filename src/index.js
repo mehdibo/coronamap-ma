@@ -4,10 +4,34 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Popup, CircleMarker } from "react-leaflet";
-import data from "./data.json";
+import locations from "./locations.json"
 
-const markers = data.locations.map(
-  location =>
+let markers = null;
+let totalCases = 0;
+let cityCases = [];
+let index = 0;
+
+const header = new Headers();
+header.append('Content-Type', 'application/json');
+const options = {
+  method: 'POST',
+  header,
+  body: '{"type": "get_data"}'
+};
+const request = new Request('https://app.siendogroup.com/api', options);
+
+fetch(request).then(res => {
+  return res.json();
+}).then(dd => {
+  let data = dd.data.sort((a, b) => parseInt(b.region_code.split("MA")[1]) - parseInt(a.region_code.split("MA")[1])).reverse();
+  data.forEach(element => {
+    totalCases += element.confirmed;
+    cityCases.push({ id: index, content: element.region_name_en + ": " + element.confirmed });
+    locations[index].count = element.confirmed;
+    index++;
+  })
+  markers = locations.map(
+    location =>
     location.position && (
       <CircleMarker
         center={location.position}
@@ -19,22 +43,12 @@ const markers = data.locations.map(
         </Popup>
       </CircleMarker>
     )
-);
-
-let totalCases = 0;
-let cityCases = [];
-let index = 0;
-
-data.locations.forEach(element => {
-  totalCases += element.count;
-  cityCases.push({ id: index, content: element.name + ": " + element.count });
-  index++;
+  )
+  ReactDOM.render(
+    <App markers={markers} caseconfirmed={totalCases} cities={cityCases} />,
+    document.getElementById("root")
+  );
 });
-
-ReactDOM.render(
-  <App markers={markers} caseconfirmed={totalCases} cities={cityCases} />,
-  document.getElementById("root")
-);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
