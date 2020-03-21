@@ -28,7 +28,8 @@ let index = 0;
 
 data.locations.forEach(element => {
   totalCases += element.count;
-  cityCases.push({ id: index, content: element.name + ": " + element.count });
+  if (element.count > 0)
+    cityCases.push({ id: index, content: element.name + ": " + element.count });
   index++;
 });
 
