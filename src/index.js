@@ -8,7 +8,8 @@ import data from "./data.json";
 
 const markers = data.locations.map(
   location =>
-    location.position && (
+    location.position &&
+    location.count > 0 && (
       <CircleMarker
         center={location.position}
         color="red"
