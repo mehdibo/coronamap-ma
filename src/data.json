@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2020-03-20 00:58",
+  "lastUpdate": "2020-03-21 16:10",
   "deaths": 3,
   "recovered": 2,
   "locations": [
@@ -11,7 +11,7 @@
     {
       "name": "Casa Settat",
       "position": [33.101, -7.806],
-      "count": 16
+      "count": 20
     },
     {
       "name": "Fès meknes",
@@ -31,12 +31,12 @@
     {
       "name": "Oriental",
       "position": [33.326, -2.422],
-      "count": 3
+      "count": 4
     },
     {
       "name": "Rabat Salé Kenitra",
       "position": [34.098, -6.328],
-      "count": 18
+      "count": 20
     },
     {
       "name": "Souss-Massa",
@@ -46,12 +46,12 @@
     {
       "name": "Tanger Tetouan Al Hoceima",
       "position": [35.3174, -5.4657],
-      "count": 5
+      "count": 7
     },
     {
       "name": "Inconnu",
       "position": null,
-      "count": 9
+      "count": 0
     }
   ]
 }
