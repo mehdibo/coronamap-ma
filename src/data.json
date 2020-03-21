@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2020-03-21 16:10",
+  "lastUpdate": "2020-03-21 20:51",
   "deaths": 3,
   "recovered": 2,
   "locations": [
@@ -51,7 +51,7 @@
     {
       "name": "Inconnu",
       "position": null,
-      "count": 0
+      "count": 10
     }
   ]
 }
