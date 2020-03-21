@@ -11,12 +11,12 @@
     {
       "name": "Casa Settat",
       "position": [33.101, -7.806],
-      "count": 20
+      "count": 22
     },
     {
       "name": "Fès meknes",
       "position": [33.756, -4.845],
-      "count": 19
+      "count": 21
     },
     {
       "name": "Guelmim Oued Noun",
@@ -26,7 +26,7 @@
     {
       "name": "Marrakech Safi",
       "position": [31.831, -8.317],
-      "count": 7
+      "count": 10
     },
     {
       "name": "Oriental",
@@ -36,7 +36,7 @@
     {
       "name": "Rabat Salé Kenitra",
       "position": [34.098, -6.328],
-      "count": 20
+      "count": 22
     },
     {
       "name": "Souss-Massa",
@@ -49,9 +49,14 @@
       "count": 7
     },
     {
+      "name": "Drâa-Tafilalet",
+      "position": [30.9, -5.6],
+      "count": 1
+    },
+    {
       "name": "Inconnu",
       "position": null,
-      "count": 10
+      "count": 0
     }
   ]
 }
