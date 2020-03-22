@@ -1,17 +1,17 @@
 {
-  "lastUpdate": "2020-03-21 23:17",
+  "lastUpdate": "2020-03-22 18:00",
   "deaths": 3,
   "recovered": 3,
   "locations": [
     {
       "name": "Beni Mellal-Khenifra",
       "position": [32.4843, -6.3199],
-      "count": 2
+      "count": 3
     },
     {
       "name": "Casa Settat",
       "position": [33.101, -7.806],
-      "count": 22
+      "count": 24
     },
     {
       "name": "Fès meknes",
@@ -26,17 +26,17 @@
     {
       "name": "Marrakech Safi",
       "position": [31.831, -8.317],
-      "count": 10
+      "count": 13
     },
     {
       "name": "Oriental",
       "position": [33.326, -2.422],
-      "count": 4
+      "count": 5
     },
     {
       "name": "Rabat Salé Kenitra",
       "position": [34.098, -6.328],
-      "count": 22
+      "count": 28
     },
     {
       "name": "Souss-Massa",
