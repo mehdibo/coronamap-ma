@@ -13,11 +13,22 @@ let index = 0;
 
 const header = new Headers();
 header.append('Content-Type', 'application/json');
+header.append('Access-Control-Allow-Origin', '*');
 const options = {
   method: 'POST',
   header,
   body: '{"type": "get_data"}'
 };
+const test = new Request('http://www.covidmaroc.ma/Pages/AccueilAR.aspx', { 
+  method: 'GET',
+  mode: 'cors',
+  header,
+  body:null
+});
+fetch(test).then(res => {
+  console.log(res);
+})
+
 const request = new Request('https://app.siendogroup.com/api', options);
 
 fetch(request).then(res => {
