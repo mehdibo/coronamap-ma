@@ -46,7 +46,7 @@ request('http://www.covidmaroc.ma/Pages/AccueilAR.aspx', function(error, respons
 		json.recovered = parseInt(recovered);
 		json.confirmed = parseInt(confirmed);
 		json.notConfirmed = parseInt(notConfirmed);
-		json.lastUpdate = (new Date()).toUTCString();
+		json.lastUpdate = (new Date()).toISOString().replace('T', ' ').substring(0, 16);
 	}
 
 	fs.writeFile('./data.json', JSON.stringify(json, null, 4), function(err){
