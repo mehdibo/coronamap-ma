@@ -10,7 +10,6 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
-    "cheerio": "^1.0.0-rc.3",
     "json-loader": "^0.5.7",
     "leaflet": "^1.6.0",
     "mixins": "0.0.1",
@@ -18,9 +17,7 @@
     "react-dom": "^16.13.0",
     "react-leaflet": "^2.6.3",
     "react-scripts": "3.4.0",
-    "react-scrollable-list": "^1.2.0",
-    "vue-loading-overlay": "^3.3.2",
-    "xmlhttprequest": "^1.8.0"
+    "react-scrollable-list": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

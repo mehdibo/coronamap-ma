@@ -50,9 +50,9 @@ class App extends React.Component {
             <polyline
               fill="none"
               stroke="#FFFFFF"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
               points="45.63,75.8 0.375,38.087 45.63,0.375 "
             />
           </svg>

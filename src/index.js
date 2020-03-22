@@ -4,46 +4,12 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Popup, CircleMarker } from "react-leaflet";
-import locations from "./locations.json"
+import data from "./data.json";
 
-let markers = null;
-let totalCases = 0;
-let cityCases = [];
-let index = 0;
-
-const header = new Headers();
-header.append('Content-Type', 'application/json');
-header.append('Access-Control-Allow-Origin', '*');
-const options = {
-  method: 'POST',
-  header,
-  body: '{"type": "get_data"}'
-};
-const test = new Request('http://www.covidmaroc.ma/Pages/AccueilAR.aspx', { 
-  method: 'GET',
-  mode: 'cors',
-  header,
-  body:null
-});
-fetch(test).then(res => {
-  console.log(res);
-})
-
-const request = new Request('https://app.siendogroup.com/api', options);
-
-fetch(request).then(res => {
-  return res.json();
-}).then(dd => {
-  let data = dd.data.sort((a, b) => parseInt(b.region_code.split("MA")[1]) - parseInt(a.region_code.split("MA")[1])).reverse();
-  data.forEach(element => {
-    totalCases += element.confirmed;
-    cityCases.push({ id: index, content: element.region_name_en + ": " + element.confirmed });
-    locations[index].count = element.confirmed;
-    index++;
-  })
-  markers = locations.map(
-    location =>
-    location.position && (
+const markers = data.locations.map(
+  location =>
+    location.position &&
+    location.count > 0 && (
       <CircleMarker
         center={location.position}
         color="red"
@@ -54,12 +20,23 @@ fetch(request).then(res => {
         </Popup>
       </CircleMarker>
     )
-  )
-  ReactDOM.render(
-    <App markers={markers} caseconfirmed={totalCases} cities={cityCases} />,
-    document.getElementById("root")
-  );
+);
+
+let totalCases = 0;
+let cityCases = [];
+let index = 0;
+
+data.locations.forEach(element => {
+  totalCases += element.count;
+  if (element.count > 0)
+    cityCases.push({ id: index, content: element.name + ": " + element.count });
+  index++;
 });
+
+ReactDOM.render(
+  <App markers={markers} caseconfirmed={totalCases} cities={cityCases} />,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
