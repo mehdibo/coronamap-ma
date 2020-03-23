@@ -1,4 +1,3 @@
-
 name: Update data
 on:
   schedule:
@@ -12,26 +11,24 @@ jobs:
       matrix:
         node-version: [13.x]
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Install packages
-      run: npm install
+      - name: Install packages
+        run: npm install
 
-    # Runs a set of commands using the runners shell
-    - name: Update the data
-      run: |
-        cd src
-        node parseData.js
-        
-    - name: Commit and Push the new data
-      run: |
-        git config --global user.email "mehdi.bounya@gmail.com"
-        git config --global user.name "mehdibo"
-        git remote set-url origin https://${{ secrets.githubToken }}@github.com/mehdibo/coronamap-ma.git
-        git add src/data.json
-        git commit -m "GitHub Workflow: updated data"
-        git push origin master
+      # Runs a set of commands using the runners shell
+      - name: Update the data
+        run: |
+          cd src
+          node parseData.js
+
+      - name: Deploy to GH Pages
+        run: |
+          git config --global user.email "mehdi.bounya@gmail.com"
+          git config --global user.name "mehdibo"
+          git remote set-url origin https://${{ secrets.githubToken }}@github.com/mehdibo/coronamap-ma.git
+          npm run deploy
