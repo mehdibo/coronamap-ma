@@ -9,5 +9,5 @@
 
 Moroccan map for Corona cases
 
-Cases are automatically fetched from [covidmaroc.ma][http://covidmaroc.ma]
+Cases are automatically fetched from [covidmaroc.ma](http://covidmaroc.ma)
 Thanks to [ReversableCode](https://github.com/ReversableCode)
