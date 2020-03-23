@@ -6,7 +6,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/mehdibo/coronamap-ma)](https://github.com/mehdibo/coronamap-ma/network)
 [![GitHub stars](https://img.shields.io/github/stars/mehdibo/coronamap-ma)](https://github.com/mehdibo/coronamap-ma/stargazers)
 [![GitHub license](https://img.shields.io/github/license/mehdibo/coronamap-ma)](https://github.com/mehdibo/coronamap-ma/blob/master/LICENSE)
-[![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fmehdibo%2Fcoronamap-ma)
 
 Moroccan map for Corona cases
 
