@@ -10,6 +10,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "cheerio": "^1.0.0-rc.3",
     "json-loader": "^0.5.7",
     "leaflet": "^1.6.0",
     "mixins": "0.0.1",
