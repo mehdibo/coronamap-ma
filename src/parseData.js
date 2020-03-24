@@ -28,10 +28,13 @@ request('http://www.covidmaroc.ma/Pages/AccueilAR.aspx', function(error, respons
 				date = $(el).text().replace(/^\s+/g, '');
 			}
 			else if (index == 1) {
-				vel = $(el).html().replace('&#x200B;<br><span class="ms-rteThemeForeColor-9-4" style="text-decoration: none solid #b10026;">', ' ').replace(/[^0-9. ]/g, '');
-				var tab = vel.split(' ');
-				deaths = tab[1];
-				recovered = tab[0];
+				$(el).find('font').each(function(i, e) {
+					if (i == 0) {
+						recovered = $(e).text().trim().replace(/[\u200B-\u200D\uFEFF]/g, '');
+					} else if (i == 1) {
+						deaths = $(e).text().trim().replace(/[\u200B-\u200D\uFEFF]/g, '');
+					}
+				})
 			}
 		});
 
