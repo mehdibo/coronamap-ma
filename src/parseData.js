@@ -83,11 +83,13 @@ request("http://www.covidmaroc.ma/Pages/AccueilAR.aspx", function(
       .toISOString()
       .replace("T", " ")
       .substring(0, 16);
+    console.log("\nTotal deaths:" + json.deaths);
+    console.log("Total recovered:" + json.recovered);
   }
 
   fs.writeFile("./data.json", JSON.stringify(json, null, 4), function(err) {
     console.log(
-      "File successfully written! - Check your project directory for the data.json file"
+      "\nFile successfully written! - Check your project directory for the data.json file"
     );
   });
 });
