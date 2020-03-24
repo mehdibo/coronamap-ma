@@ -13,7 +13,7 @@ const markers = data.locations.map(
       <CircleMarker
         center={location.position}
         color="red"
-        radius={location.count}
+        radius={(location.count * 1) / 2}
       >
         <Popup>
           {location.name}: {location.count}
