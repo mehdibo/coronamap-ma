@@ -1,9 +1,9 @@
 {
-    "lastUpdate": "2020-03-23 12:09",
-    "deaths": 4,
-    "recovered": 3,
-    "confirmed": 134,
-    "notConfirmed": 571,
+    "lastUpdate": "2020-03-24 17:44",
+    "deaths": 5,
+    "recovered": 6,
+    "confirmed": 170,
+    "notConfirmed": 685,
     "locations": [
         {
             "name": "Beni Mellal-Khénifra",
@@ -11,7 +11,7 @@
                 32.4843,
                 -6.3199
             ],
-            "count": 3
+            "count": 4
         },
         {
             "name": "Casa Settat",
@@ -19,7 +19,7 @@
                 33.101,
                 -7.806
             ],
-            "count": 34
+            "count": 42
         },
         {
             "name": "Fès meknes",
@@ -27,7 +27,7 @@
                 33.756,
                 -4.845
             ],
-            "count": 29
+            "count": 36
         },
         {
             "name": "Guelmim Oued Noun",
@@ -43,7 +43,7 @@
                 31.831,
                 -8.317
             ],
-            "count": 15
+            "count": 22
         },
         {
             "name": "Laâyoune-Sakia El Hamra",
@@ -75,7 +75,7 @@
                 33.326,
                 -2.422
             ],
-            "count": 5
+            "count": 7
         },
         {
             "name": "Rabat Salé Kenitra",
@@ -83,7 +83,7 @@
                 34.098,
                 -6.328
             ],
-            "count": 32
+            "count": 40
         },
         {
             "name": "Souss-Massa",
@@ -99,7 +99,7 @@
                 35.3174,
                 -5.4657
             ],
-            "count": 8
+            "count": 11
         }
     ]
 }
