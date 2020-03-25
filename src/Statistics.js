@@ -38,8 +38,8 @@ class Statistics extends React.Component {
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="56"
-                    height="56"
+                    width="50"
+                    height="50"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#fff"
@@ -66,8 +66,8 @@ class Statistics extends React.Component {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                     style={{ enableBackground: "new 0 0 512 512" }}
-                    width="56px"
-                    height="56px"
+                    width="50px"
+                    height="50px"
                     fill="#ffffff"
                     stroke="#ffffff"
                     stroke-width="8"
@@ -89,8 +89,8 @@ class Statistics extends React.Component {
                   </div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="56"
-                    height="56"
+                    width="50"
+                    height="50"
                     viewBox="0 0 56 56"
                     fill="#ffffff"
                   >

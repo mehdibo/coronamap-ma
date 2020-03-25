@@ -1,9 +1,9 @@
 {
-    "lastUpdate": "2020-03-24 17:44",
-    "deaths": 5,
-    "recovered": 6,
-    "confirmed": 170,
-    "notConfirmed": 685,
+    "lastUpdate": "2020-03-25 18:47",
+    "deaths": 6,
+    "recovered": 7,
+    "confirmed": 225,
+    "notConfirmed": 740,
     "locations": [
         {
             "name": "Beni Mellal-Khénifra",
