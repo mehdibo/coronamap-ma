@@ -22,19 +22,17 @@ const markers = data.locations.map(
     )
 );
 
-let totalCases = 0;
 let cityCases = [];
 let index = 0;
 
 data.locations.forEach(element => {
-  totalCases += element.count;
   if (element.count > 0)
     cityCases.push({ id: index, content: element.name + ": " + element.count });
   index++;
 });
 
 ReactDOM.render(
-  <App markers={markers} caseconfirmed={totalCases} cities={cityCases} />,
+  <App markers={markers} caseconfirmed={data.confirmed} cities={cityCases} />,
   document.getElementById("root")
 );
 
