@@ -1,9 +1,9 @@
 {
-    "lastUpdate": "2020-03-25 18:47",
-    "deaths": 6,
-    "recovered": 7,
-    "confirmed": 225,
-    "notConfirmed": 740,
+    "lastUpdate": "2020-03-26 22:44",
+    "deaths": 10,
+    "recovered": 8,
+    "confirmed": 275,
+    "notConfirmed": 931,
     "locations": [
         {
             "name": "Beni Mellal-Khénifra",
@@ -11,7 +11,7 @@
                 32.4843,
                 -6.3199
             ],
-            "count": 4
+            "count": 7
         },
         {
             "name": "Casa Settat",
@@ -19,7 +19,7 @@
                 33.101,
                 -7.806
             ],
-            "count": 42
+            "count": 87
         },
         {
             "name": "Fès meknes",
@@ -27,7 +27,7 @@
                 33.756,
                 -4.845
             ],
-            "count": 36
+            "count": 51
         },
         {
             "name": "Guelmim Oued Noun",
@@ -43,7 +43,7 @@
                 31.831,
                 -8.317
             ],
-            "count": 22
+            "count": 43
         },
         {
             "name": "Laâyoune-Sakia El Hamra",
@@ -67,7 +67,7 @@
                 31.386,
                 -5.547
             ],
-            "count": 1
+            "count": 3
         },
         {
             "name": "Oriental",
@@ -83,7 +83,7 @@
                 34.098,
                 -6.328
             ],
-            "count": 40
+            "count": 50
         },
         {
             "name": "Souss-Massa",
@@ -91,7 +91,7 @@
                 29.7453,
                 -8.1436
             ],
-            "count": 6
+            "count": 10
         },
         {
             "name": "Tanger Tetouan Al Hoceima",
@@ -99,7 +99,7 @@
                 35.3174,
                 -5.4657
             ],
-            "count": 11
+            "count": 16
         }
     ]
 }

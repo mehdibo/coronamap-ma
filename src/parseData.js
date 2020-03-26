@@ -37,7 +37,7 @@ request("http://www.covidmaroc.ma/Pages/AccueilAR.aspx", function(
             .replace(/^\s+/g, "");
         } else if (index == 1) {
           $(el)
-            .find("font")
+            .find("span")
             .each(function(i, e) {
               if (i == 0) {
                 recovered = $(e)
