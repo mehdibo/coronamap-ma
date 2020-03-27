@@ -2,7 +2,12 @@ const fs = require("fs");
 const request = require("request");
 const cheerio = require("cheerio");
 
-request("http://www.covidmaroc.ma/Pages/AccueilAR.aspx", function(
+request({
+  headers: {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+  },
+  uri: "http://covidmaroc.ma"
+}, function(
   error,
   response,
   html
@@ -36,21 +41,16 @@ request("http://www.covidmaroc.ma/Pages/AccueilAR.aspx", function(
             .text()
             .replace(/^\s+/g, "");
         } else if (index == 1) {
-          $(el)
+          recovered = $(el)
+            .find("font")
+            .text()
+            .trim()
+            .replace(/[\u200B-\u200D\uFEFF]/g, "");
+          deaths = $(el)
             .find("span")
-            .each(function(i, e) {
-              if (i == 0) {
-                recovered = $(e)
-                  .text()
-                  .trim()
-                  .replace(/[\u200B-\u200D\uFEFF]/g, "");
-              } else if (i == 1) {
-                deaths = $(e)
-                  .text()
-                  .trim()
-                  .replace(/[\u200B-\u200D\uFEFF]/g, "");
-              }
-            });
+            .text()
+            .trim()
+            .replace(/[\u200B-\u200D\uFEFF]/g, "");
         }
       });
 
