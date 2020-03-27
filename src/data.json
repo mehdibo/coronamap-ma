@@ -1,9 +1,9 @@
 {
-    "lastUpdate": "2020-03-26 22:44",
-    "deaths": 10,
-    "recovered": 8,
-    "confirmed": 275,
-    "notConfirmed": 931,
+    "lastUpdate": "2020-03-27 22:30",
+    "deaths": 23,
+    "recovered": 11,
+    "confirmed": 345,
+    "notConfirmed": 1423,
     "locations": [
         {
             "name": "Beni Mellal-Khénifra",
@@ -11,7 +11,7 @@
                 32.4843,
                 -6.3199
             ],
-            "count": 7
+            "count": 10
         },
         {
             "name": "Casa Settat",
@@ -19,7 +19,7 @@
                 33.101,
                 -7.806
             ],
-            "count": 87
+            "count": 107
         },
         {
             "name": "Fès meknes",
@@ -27,7 +27,7 @@
                 33.756,
                 -4.845
             ],
-            "count": 51
+            "count": 63
         },
         {
             "name": "Guelmim Oued Noun",
@@ -43,7 +43,7 @@
                 31.831,
                 -8.317
             ],
-            "count": 43
+            "count": 57
         },
         {
             "name": "Laâyoune-Sakia El Hamra",
@@ -67,7 +67,7 @@
                 31.386,
                 -5.547
             ],
-            "count": 3
+            "count": 5
         },
         {
             "name": "Oriental",
@@ -75,7 +75,7 @@
                 33.326,
                 -2.422
             ],
-            "count": 7
+            "count": 12
         },
         {
             "name": "Rabat Salé Kenitra",
@@ -83,7 +83,7 @@
                 34.098,
                 -6.328
             ],
-            "count": 50
+            "count": 56
         },
         {
             "name": "Souss-Massa",
@@ -91,7 +91,7 @@
                 29.7453,
                 -8.1436
             ],
-            "count": 10
+            "count": 11
         },
         {
             "name": "Tanger Tetouan Al Hoceima",
@@ -99,7 +99,7 @@
                 35.3174,
                 -5.4657
             ],
-            "count": 16
+            "count": 23
         }
     ]
 }
