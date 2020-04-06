@@ -42,10 +42,7 @@ request({
             .replace(/^\s+/g, "");
         } else if (index == 1) {
           recovered = $(el)
-            .find("font")
-            .text()
-            .trim()
-            .replace(/[\u200B-\u200D\uFEFF]/g, "");
+            .contents()
           deaths = $(el)
             .find("span")
             .text()

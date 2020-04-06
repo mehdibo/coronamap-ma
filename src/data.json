@@ -1,9 +1,9 @@
 {
-    "lastUpdate": "2020-03-27 22:30",
-    "deaths": 23,
-    "recovered": 11,
-    "confirmed": 345,
-    "notConfirmed": 1423,
+    "lastUpdate": "2020-04-06 15:12",
+    "deaths": 71,
+    "recovered": 76,
+    "confirmed": 1113,
+    "notConfirmed": 3954,
     "locations": [
         {
             "name": "Beni Mellal-Khénifra",
@@ -11,7 +11,7 @@
                 32.4843,
                 -6.3199
             ],
-            "count": 10
+            "count": 28
         },
         {
             "name": "Casa Settat",
@@ -19,7 +19,7 @@
                 33.101,
                 -7.806
             ],
-            "count": 107
+            "count": 339
         },
         {
             "name": "Fès meknes",
@@ -27,7 +27,7 @@
                 33.756,
                 -4.845
             ],
-            "count": 63
+            "count": 142
         },
         {
             "name": "Guelmim Oued Noun",
@@ -43,7 +43,7 @@
                 31.831,
                 -8.317
             ],
-            "count": 57
+            "count": 212
         },
         {
             "name": "Laâyoune-Sakia El Hamra",
@@ -51,7 +51,7 @@
                 26.727,
                 -11.661
             ],
-            "count": 0
+            "count": 4
         },
         {
             "name": "Dakhla-Oued Ed Dahab",
@@ -67,7 +67,7 @@
                 31.386,
                 -5.547
             ],
-            "count": 5
+            "count": 43
         },
         {
             "name": "Oriental",
@@ -75,7 +75,7 @@
                 33.326,
                 -2.422
             ],
-            "count": 12
+            "count": 59
         },
         {
             "name": "Rabat Salé Kenitra",
@@ -83,7 +83,7 @@
                 34.098,
                 -6.328
             ],
-            "count": 56
+            "count": 187
         },
         {
             "name": "Souss-Massa",
@@ -91,7 +91,7 @@
                 29.7453,
                 -8.1436
             ],
-            "count": 11
+            "count": 19
         },
         {
             "name": "Tanger Tetouan Al Hoceima",
@@ -99,7 +99,7 @@
                 35.3174,
                 -5.4657
             ],
-            "count": 23
+            "count": 79
         }
     ]
 }
